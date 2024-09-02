@@ -1,12 +1,12 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #F0EAD6; /* Cor bege clara para um tom agrícola */
+    background-color: #E3F2FD;
     margin: 0;
     padding: 0;
 }
 
 header {
-    background-color: #4E342E; /* Marrom escuro, que representa a terra fértil */
+    background-color: #1565C0;
     color: white;
     text-align: center;
     padding: 15px 0;
@@ -14,7 +14,7 @@ header {
 
 nav {
     text-align: center;
-    background-color: #795548; /* Marrom médio, relacionado ao cultivo */
+    background-color: #1976D2;
     padding: 10px 0;
 }
 
@@ -27,7 +27,7 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #D7C67E; /* Cor de milho ao passar o mouse */
+    background-color: #BBDEFB;
     padding: 8px;
     border-radius: 5px;
 }
@@ -35,7 +35,7 @@ nav a:hover {
 .content {
     margin: 10px;
     padding: 15px;
-    background-color: #FFF8E1; /* Amarelo claro que remete ao milho */
+    background-color: white;
     border-radius: 8px;
 }
 
@@ -61,7 +61,7 @@ h1, h2, h3 {
 footer {
     text-align: center;
     padding: 10px;
-    background-color: #4E342E; /* Repete a cor marrom escura */
+    background-color: #1565C0;
     color: white;
 }
 
@@ -77,7 +77,7 @@ footer {
         padding: 10px;
     }
 
-    .img-container amp-img {
+    .img-container img {
         max-width: 100%; /* Ajusta as imagens para ocupar a largura total da tela no mobile */
     }
 
