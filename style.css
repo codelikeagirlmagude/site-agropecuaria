@@ -53,7 +53,7 @@ h1, h2, h3 {
 
 .img-container amp-img {
     width: 100%; /* As imagens agora ocupam 100% da largura disponível */
-    max-width: 300px; /* Tamanho máximo das imagens para não exagerar em telas maiores */
+    max-width: 200px; /* Tamanho máximo das imagens para não exagerar em telas maiores */
     height: auto;
     border-radius: 8px;
 }
