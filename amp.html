@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html ⚡ lang="pt">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <title>Agropecuária Magude - Milho e Carne Bovina</title>
+    <link rel="stylesheet" href="amp-style.css">
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <style amp-custom>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #F0EAD6;
+        }
+
+        header {
+            background-color: #4E342E;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        nav {
+            text-align: center;
+            padding: 10px;
+            background-color: #795548;
+        }
+
+        nav a {
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            background-color: #D7C67E;
+        }
+
+        .content {
+            margin: 20px;
+            padding: 20px;
+            background-color: #FFF8E1;
+            border-radius: 8px;
+        }
+
+        h1, h2, h3 {
+            text-align: center;
+        }
+
+        .img-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+
+        .img-container amp-img {
+            width: 400px;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        #calendar-countdown {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            width: 300px;
+            height: 200px;
+            background-image: url('https://images.unsplash.com/photo-1591035897812-e485bc2e9f30');
+            background-size: cover;
+            background-position: center;
+            padding: 20px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            color: rgb(177, 4, 4);
+            font-family: 'Fjalla One', sans-serif;
+            font-size: 22px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #4E342E;
+            color: white;
+        }
+    </style>
+    <script async custom-element="amp-countdown" src="https://cdn.ampproject.org/v0/amp-countdown-0.1.js"></script>
+</head>
+<body>
+    <header>
+        <h1 id="titulo">Agropecuária Magude</h1>
+        <h2>Promovendo o Distrito de Magude no Mundo de Negócios Digitais</h2>
+    </header>
+
+    <nav>
+        <a href="#home">Página Inicial</a>
+        <a href="#sobre-nos">Sobre Nós</a>
+        <a href="#produtos">Produtos</a>
+        <a href="#contato">Contato</a>
+    </nav>
+
+    <div id="calendar-countdown">
+        <h3>Feira de Carne em Magude</h3>
+        <amp-countdown
+            layout="fixed-height"
+            height="200"
+            end="2024-11-02T00:00:00Z"
+            format="MM DD HH mm SS"
+            on="end:AMP.setState({countdownExpired: true})">
+            <div>
+                <span [text]="countdown.days" style="font-weight: bold;"></span>d
+                <span [text]="countdown.hours" style="font-weight: bold;"></span>h
+                <span [text]="countdown.minutes" style="font-weight: bold;"></span>m
+                <span [text]="countdown.seconds" style="font-weight: bold;"></span>s
+            </div>
+            <template type="amp-mustache" [hidden]="!countdownExpired">
+                Feira já começou!
+            </template>
+        </amp-countdown>
+    </div>
+
+    <section class="content" id="home">
+        <h2>Bem-vindo à Agropecuária Magude</h2>
+        <p>Descubra o que há de melhor na Agropecuária no nosso distrito de Magude. Nós, as raparigas do Distrito de Magude, estamos comprometidas e engajadas com a excelência em ambos os setores para promover a economia e levar o distrito para a era digital.</p>
+        <amp-carousel width="600" height="400" layout="responsive" type="slides">
+            <amp-img src="Images\ec0f3765-agricultura-an-1320x880.jpg" width="600" height="400" layout="responsive" alt="Milho em Magude"></amp-img>
+            <amp-img src="Images\1=gado-em-Goba-12.jpg" width="600" height="400" layout="responsive" alt="Gado em Magude"></amp-img>
+            <amp-img src="Images\IMG-20211026-WA0018.jpg" width="600" height="400" layout="responsive" alt="Cultivo de Milho"></amp-img>
+        </amp-carousel>
+    </section>
+
+    <section class="content" id="sobre-nos">
+        <h2>Sobre Nós</h2>
+        <p>Somos um grupo de raparigas do Distrito de Magude, com idades entre 14 e 22 anos, comprometidas em transformar o setor agropecuário e impulsionar o desenvolvimento sustentável na era digital.</p>
+        <p>Magude destaca-se como um dos grandes produtores de carne bovina em Moçambique e uma das regiões mais promissoras para o cultivo de milho. Com foco em práticas agrícolas sustentáveis e inovadoras, buscamos fortalecer a economia local, promovendo o progresso e o bem-estar da nossa comunidade. Nosso objetivo é liderar a mudança, aproveitando as oportunidades tecnológicas para garantir um futuro mais próspero e sustentável para todos.</p>
+        <amp-carousel width="600" height="400" layout="responsive" type="slides">
+            <amp-img src="Images\magude.jpg" width="600" height="400" layout="responsive" alt="Gado em Magude"></amp-img>
+            <amp-img src="Images\WhatsApp Image 2024-08-20 at 22.25.05_ba5423cb.jpg" width="600" height="400" layout="responsive" alt="Milho em Magude"></amp-img>
+        </amp-carousel>
+    </section>
+
+    <section class="content" id="produtos">
+        <h2>Os Nossos Produtos</h2>
+        <h3>Produtos Agrícolas e Carne Bovina</h3>
+        <p>Ajudamos a tornar a agricultura familiar de Magude mais sustentável, expondo-a ao mundo digital e aumentando o rendimento dos agricultores. Dessa forma, contribuímos para que essa atividade se torne mais sustentável. Também promovemos a carne bovina fresca de Magude no mercado global, atraindo mais clientes para os produtores locais.</p>
+        <amp-carousel width="600" height="400" layout="responsive" type="slides">
+            <amp-img src="Images\producao-de-alimentos.jpg" width="600" height="400" layout="responsive" alt="Produção de Alimentos"></amp-img>
+            <amp-img src="Images\WhatsApp Image 2024-08-23 at 06.47.55_42362334.jpg" width="600" height="400" layout="responsive" alt="Milho em Magude"></amp-img>
+            <amp-img src="Images\Carne.jpg" width="600" height="400" layout="responsive" alt="Carne Bovina em Magude"></amp-img>
+            <amp-img src="Images\festival.jpg" width="600" height="400" layout="responsive" alt="Festival em Magude"></amp-img>
+        </amp-carousel>
+    </section>
+
+    <section class="content" id="contato">
+        <h2>Contato</h2>
+        <p>Entre em contato conosco para mais informações sobre os nossos produtos:</p>
+        <p><strong>Telefone:</strong> +258 84 123 4567</p>
+        <p><strong>Email:</strong> codelikeagirl2024@gmail.com</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Agropecuária Magude. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
