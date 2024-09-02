@@ -51,9 +51,9 @@ h1, h2, h3 {
     margin-top: 15px;
 }
 
-.img-container amp-img {
+.img-container img {
     width: 100%; /* As imagens agora ocupam 100% da largura disponível */
-    max-width: 200px; /* Tamanho máximo das imagens para não exagerar em telas maiores */
+    max-width: 300px; /* Tamanho máximo das imagens para não exagerar em telas maiores */
     height: auto;
     border-radius: 8px;
 }
