@@ -1,3 +1,4 @@
+/* Estilos gerais */
 body {
     font-family: Arial, sans-serif;
     background-color: #F0EAD6;
@@ -43,6 +44,7 @@ h1, h2, h3 {
     text-align: center;
 }
 
+/* Estilo para a exibição de imagens */
 .img-container {
     display: flex;
     flex-wrap: wrap;
@@ -52,8 +54,8 @@ h1, h2, h3 {
 }
 
 .img-container img {
-    width: 100%; /* As imagens agora ocupam 100% da largura disponível */
-    max-width: 300px; /* Tamanho máximo das imagens para não exagerar em telas maiores */
+    width: 100%;
+    max-width: 300px;
     height: auto;
     border-radius: 8px;
 }
@@ -78,7 +80,7 @@ footer {
     }
 
     .img-container img {
-        max-width: 100%; /* Ajusta as imagens para ocupar a largura total da tela no mobile */
+        max-width: 100%;
     }
 
     h1 {
