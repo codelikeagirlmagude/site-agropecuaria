@@ -39,39 +39,6 @@
     <footer>
         <p>&copy; 2024 Agropecuária Magude - Todos os Direitos Reservados</p>
     </footer>
-    <!-- Adicionando o script para conectar à API do WordPress -->
-    <script>
-        const apiUrl = 'http://codelikeagirl2024.kesug.com/wp-json/wp/v2/posts';
-
-        // Função para buscar e exibir os posts
-        async function carregarPosts() {
-            try {
-                const resposta = await fetch(apiUrl);
-                const posts = await resposta.json();
-
-                // Seleciona o elemento onde os posts serão exibidos
-                const containerPosts = document.createElement('div');
-                document.body.appendChild(containerPosts);
-
-                // Itera sobre os posts e insere no HTML
-                posts.forEach(post => {
-                    const postElement = document.createElement('div');
-                    postElement.innerHTML = `
-                        <h2>${post.title.rendered}</h2>
-                        <p>${post.content.rendered}</p>
-                    `;
-                    containerPosts.appendChild(postElement);
-                });
-            } catch (erro) {
-                console.error('Erro ao carregar os posts:', erro);
-                document.body.innerHTML += '<p>Erro ao carregar posts.</p>';
-            }
-        }
-
-        // Carregar os posts ao abrir a página
-        carregarPosts();
-    </script>
-
     <script src="script.js"></script>
 </body>
 </html>
