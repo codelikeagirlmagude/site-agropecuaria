@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agropecuária Magude - Milho e Carne Bovina</title>
-        <script async custom-element="amp-timeago" src="https://cdn.ampproject.org/v0/amp-timeago-0.1.js"></script>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
@@ -24,21 +24,64 @@
         <h2>Bem-vindo à Agropecuária Magude</h2>
         <p>Descubra o que há de melhor na Agropecuária no nosso distrito de Magude. Nós, as raparigas do Distrito de Magude, estamos comprometidas e engajadas com a excelência em ambos os setores para promover a economia e levar o distrito para a era digital.</p>
         <div class="img-container">
-            <img id="img-home3" src="Images\ec0f3765-agricultura-an-1320x880.jpg" alt="Milho em Magude">
-            <img id="img-home1" src="Images\1=gado-em-Goba-12.jpg" alt="Gado em Magude">
-            <img id="img-home2" src="Images\IMG-20211026-WA0018.jpg" alt="Cultivo de Milho">
+            <img id="img-home3" src="Images/ec0f3765-agricultura-an-1320x880.jpg" alt="Milho em Magude">
+            <img id="img-home1" src="Images/1=gado-em-Goba-12.jpg" alt="Gado em Magude">
+            <img id="img-home2" src="Images/IMG-20211026-WA0018.jpg" alt="Cultivo de Milho">
         </div>
-        <section class="content">
+    </section>
+
+    <section class="content">
         <h2>Contato</h2>
         <p>Entre em contato conosco para mais informações sobre os nossos produtos:</p>
         <p><strong>Telefone:</strong> +258 84 123 4567</p>
         <p><strong>Email:</strong> info@agromagude.co.mz</p>
         <img id="img-contato" src="Images/imagem_contato.jpg" alt="Contato Agropecuária Magude">
     </section>
-    </section>
+
     <footer>
         <p>&copy; 2024 Agropecuária Magude - Todos os Direitos Reservados</p>
     </footer>
-    <script src="script.js"></script>
+
+    <!-- Editor UI for content management -->
+    <section>
+        <h2>Adicionar Novo Produto</h2>
+        <form id="adminForm" enctype="multipart/form-data">
+            <label for="postTitle">Título do Produto:</label>
+            <input type="text" id="postTitle" name="postTitle" required>
+
+            <label for="titleSize">Tamanho do Título:</label>
+            <select id="titleSize" name="titleSize">
+                <option value="h1">Grande (H1)</option>
+                <option value="h2">Médio (H2)</option>
+                <option value="h3">Pequeno (H3)</option>
+            </select>
+
+            <label for="textBorder">Borda do Texto:</label>
+            <select id="textBorder" name="textBorder">
+                <option value="none">Nenhuma</option>
+                <option value="solid">Sólida</option>
+                <option value="dashed">Tracejada</option>
+                <option value="dotted">Pontilhada</option>
+            </select>
+
+            <label for="postContent">Descrição do Produto:</label>
+            <div id="editorToolbar">
+                <button type="button" onclick="formatText('bold')"><b>Negrito</b></button>
+                <button type="button" onclick="formatText('italic')"><i>Itálico</i></button>
+                <button type="button" onclick="formatText('underline')"><u>Sublinhado</u></button>
+                <button type="button" onclick="formatText('strikethrough')"><s>Riscar</s></button>
+                <button type="button" onclick="formatText('justifyLeft')">Alinhar à Esquerda</button>
+                <button type="button" onclick="formatText('justifyCenter')">Centralizar</button>
+                <button type="button" onclick="formatText('justifyRight')">Alinhar à Direita</button>
+            </div>
+            <div contenteditable="true" id="postContent" class="editor-area" style="border: 1px solid #ccc; padding: 10px;" required></div>
+
+            <label for="imageInput">Imagem de Destaque:</label>
+            <input type="file" id="imageInput" name="postImage" accept="image/*" required>
+            <img id="imagePreview" src="" alt="Pré-visualização da Imagem" style="display: block; margin: 10px 0; max-width: 100%;">
+
+            <input type="submit" value="Publicar Produto">
+        </form>
+    </section>
 </body>
 </html>
