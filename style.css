@@ -1,107 +1,4 @@
-/* Estilos gerais */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #F0EAD6;
-    margin: 0;
-    padding: 0;
-}
-
-header {
-    background-color: #4E342E;
-    color: white;
-    text-align: center;
-    padding: 15px 0;
-}
-
-nav {
-    text-align: center;
-    background-color: #795548;
-    padding: 10px 0;
-}
-
-nav a {
-    color: white;
-    margin: 0 10px;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 14px;
-}
-
-nav a:hover {
-    background-color: #D7C67E;
-    padding: 8px;
-    border-radius: 5px;
-}
-
-/* Banner */
-.banner {
-    background-color: #D7C67E;
-    color: white;
-    padding: 40px;
-    text-align: center;
-}
-
-.banner-content h2 {
-    font-size: 24px;
-    color: #4E342E;
-}
-
-.banner-content p {
-    color: #FFF8E1;
-}
-
-/* Conteúdo Principal */
-.content {
-    margin: 10px;
-    padding: 15px;
-    background-color: #FFF8E1;
-    border-radius: 8px;
-}
-
-h1, h2, h3 {
-    text-align: center;
-}
-
-/* Carrossel de Imagens */
-.carousel-container {
-    display: flex;
-    justify-content: center;
-    overflow: hidden;
-    max-width: 900px;
-    margin: 20px auto;
-}
-
-.carousel-img {
-    width: 100%;
-    max-width: 900px;
-    height: 304px;
-}
-
-/* Produtos */
-.product-list, .producer-list {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin-top: 20px;
-}
-
-.product-item, .producer-item {
-    position: relative;
-    width: 300px;
-}
-
-.product-label, .producer-name {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: rgba(78, 52, 46, 0.8);
-    color: white;
-    padding: 5px;
-    border-radius: 4px;
-}
-
-/* Estilo para a exibição de imagens */
+/* Contêiner de Imagens para Produtos e Produtores */
 .img-container {
     display: flex;
     flex-wrap: wrap;
@@ -110,120 +7,27 @@ h1, h2, h3 {
     margin-top: 15px;
 }
 
-.img-container img {
+.img-container img, .product-item img, .producer-item img {
     width: 100%;
     max-width: 300px;
     height: auto;
     border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombras leves para destacar as imagens */
 }
 
-/* Escola do Agricultor e Pecuarista */
-.farmer-school {
-    padding: 30px 0;
-    background-color: #FFE4B5;
-    text-align: center;
-    color: #4E342E;
-}
-
-.farmer-school h2 {
-    font-size: 24px;
-    color: #4E342E;
-    margin-bottom: 15px;
-}
-
-.farmer-school a {
-    color: #4E342E;
-    text-decoration: underline;
-}
-
-.farmer-school img {
-    width: 100%;
-    max-width: 900px;
-    height: auto;
-    margin-top: 20px;
-}
-
-/* Seção de frete e pagamento */
-.shipping-payment-options {
-    background-color: #FFF8E1;
-    padding: 20px 0;
-    text-align: center;
-}
-
-.shipping-payment-options .row {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin-top: 10px;
-}
-
-.shipping-payment-options .option {
-    width: 300px; /* Largura igual à dos retângulos dos produtores */
-    background: rgba(78, 52, 46, 0.8); /* Cor do fundo dos retângulos */
+/* Rótulos para Produtos e Produtores */
+.product-label, .producer-name {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(78, 52, 46, 0.8);
     color: white;
-    padding: 10px;
+    padding: 5px 10px;
     border-radius: 4px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-/* Ícones de pagamento */
-.shipping-payment-options i {
-    font-size: 24px;
-    color: #FFF8E1;
-    margin-bottom: 5px;
-}
-
-/* Contato */
-.contact {
-    padding: 30px 0;
     text-align: center;
-}
-
-.contact h2 {
-    font-size: 24px;
-    color: #4E342E;
-}
-
-/* Rodapé */
-footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #4E342E;
-    color: white;
-}
-
-/* Estilos específicos para dispositivos móveis */
-@media (max-width: 600px) {
-    nav a {
-        display: block;
-        margin: 10px 0;
-    }
-
-    .content {
-        margin: 5px;
-        padding: 10px;
-    }
-
-    .img-container img {
-        max-width: 100%;
-    }
-
-    .carousel-container, .product-list, .producer-list, .shipping-payment-options .row {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    h1 {
-        font-size: 24px;
-    }
-
-    h2 {
-        font-size: 20px;
-    }
-
-    h3 {
-        font-size: 18px;
-    }
+    font-weight: bold;
+    font-size: 14px;
+    width: 90%;
+    max-width: 280px;
 }
