@@ -179,75 +179,56 @@ h1, h2, h3 {
 
 /* Rodapé Detalhado */
 footer {
-    background-color: #4E342E;
-    color: white;
-    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
 }
 
-.footer-content {
-    padding-bottom: 15px;
-    border-bottom: 1px solid #D7C67E;
+.footer-section {
+    width: 22%;
+}
+
+.footer-section h3 {
+    font-size: 16px;
+    color: #333;
     margin-bottom: 15px;
 }
 
-footer h3 {
-    font-size: 18px;
-    color: #FFF8E1;
-    margin-bottom: 10px;
-}
-
-.footer-networks {
-    list-style: none;
+.footer-section ul {
+    list-style-type: none;
     padding: 0;
     margin: 0;
 }
 
-.footer-networks li {
-    margin-bottom: 8px;
+.footer-section ul li {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
 }
 
-.footer-networks a {
-    color: #FFF8E1;
+.footer-section ul li a {
+    color: #666;
     text-decoration: none;
+}
+
+.footer-section ul li i {
+    margin-right: 8px;
+    color: #666;
+}
+
+.footer-section ul li a:hover {
+    color: #000;
+}
+
+.social-media li {
     display: flex;
     align-items: center;
 }
 
-.footer-networks a:hover {
-    color: #D7C67E;
-}
-
-.footer-networks i {
-    margin-right: 8px;
-    color: #D7C67E;
+.social-media li i {
     font-size: 18px;
-}
-
-/* Links do Rodapé */
-footer ul {
-    list-style: none;
-    padding: 0;
-}
-
-footer ul li {
-    margin-bottom: 8px;
-}
-
-footer ul li a {
-    color: #FFF8E1;
-    text-decoration: none;
-}
-
-footer ul li a:hover {
-    color: #D7C67E;
-}
-
-/* Responsivo */
-@media (max-width: 600px) {
-    .footer-content {
-        text-align: center;
-    }
-    .footer-content .row {
-        flex-direction: column;
-    }
+    margin-right: 8px;
+    color: #333;
 }
