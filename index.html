@@ -7,11 +7,12 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Cabeçalho com navegação principal -->
+    <!-- Cabeçalho com título e descrição -->
     <header class="header">
         <div class="container">
             <div class="header-content">
-                <h1 class="logo"><a href="index.html">Agropecuária Magude</a></h1>
+                <h1 class="logo">Agropecuária Magude</h1>
+                <h2>Promovendo o Distrito de Magude no Mundo de Negócios Digitais</h2>
                 <nav class="main-nav">
                     <a href="index.html">Página Inicial</a>
                     <a href="sobre.html">Sobre Nós</a>
@@ -23,80 +24,109 @@
     </header>
 
     <!-- Seção principal de introdução -->
-    <section class="banner">
-        <div class="banner-content">
-            <h2>Promovendo o Distrito de Magude no Mundo de Negócios Digitais</h2>
-            <p>Descubra o que há de melhor na Agropecuária do nosso distrito, impulsionando a economia local e conectando produtores ao mercado global.</p>
-        </div>
-    </section>
-
     <main>
-        <!-- Seção Escola do Agricultor e Pecuarista -->
-        <section class="farmer-school">
-            <div class="container">
-                <h2>Escola do Agricultor e Pecuarista</h2>
-                <p>A Escola do Agricultor e Pecuarista contribui para que a agricultura de subsistência seja economicamente viável, tornando o pequeno e médio produtor mais capacitado e o grande produtor atualizado com vistas ao desenvolvimento sustentável de Moçambique.</p>
-                <p>Quer ser nosso parceiro e vender conosco? <a href="registro.html">Registe-se aqui</a>.</p>
-                <p><strong>Entregas disponíveis em Maputo e Gaza</strong></p>
-            </div>
-        </section>
-
-        <!-- Seção principal de boas-vindas -->
+        <!-- Bem-vindo -->
         <section class="welcome">
             <div class="container">
                 <h2>Bem-vindo à Agropecuária Magude</h2>
-                <p>Nós, as raparigas do Distrito de Magude, estamos comprometidas com a excelência e o progresso do setor agropecuário, levando o distrito para a era digital.</p>
-                <div class="img-container">
-                    <img src="Images/ec0f3765-agricultura-an-1320x880.jpg" alt="Milho em Magude">
-                    <img src="Images/1=gado-em-Goba-12.jpg" alt="Gado em Magude">
-                    <img src="Images/IMG-20211026-WA0018.jpg" alt="Cultivo de Milho">
+            </div>
+        </section>
+
+        <!-- Carrossel de Imagens -->
+        <section class="carousel">
+            <div class="carousel-container">
+                <div class="carousel-slide">
+                    <img src="Images/carousel1.jpg" alt="Imagem 1" class="carousel-img">
+                    <img src="Images/carousel2.jpg" alt="Imagem 2" class="carousel-img">
                 </div>
             </div>
         </section>
 
-        <!-- Seção com informações de frete e pagamento -->
+        <!-- Produtos -->
+        <section class="products">
+            <div class="container">
+                <h2>Produtos</h2>
+                <div class="product-list">
+                    <div class="product-item">
+                        <img src="Images/ec0f3765-agricultura-an-1320x880.jpg" alt="Milho">
+                        <div class="product-label">Milho</div>
+                    </div>
+                    <div class="product-item">
+                        <img src="Images/1=gado-em-Goba-12.jpg" alt="Carne Bovina">
+                        <div class="product-label">Carne Bovina</div>
+                    </div>
+                    <div class="product-item">
+                        <img src="Images/IMG-20211026-WA0018.jpg" alt="Carne Caprina">
+                        <div class="product-label">Carne Caprina</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Frete e Pagamento -->
         <section class="shipping-payment-options">
             <div class="container">
                 <div class="row">
-                    <div class="col-6 col-lg-3 mb-4 mb-lg-0">
-                        <a href="#modalFreteGratis" data-target="#modalFreteGratis" data-toggle="modal" class="d-lg-flex align-items-center justify-content-center text-center">
-                            <i class="icon-shipping"></i>
-                            <span class="d-lg-flex align-items-center">
-                                <span><b class="d-block d-lg-inline-block">Frete grátis</b></span>
-                                <small class="d-block ml-2">Veja regras*</small>
-                            </span>
-                        </a>
-                    </div>
-                    <div class="col-6 col-lg-3 mb-4 mb-lg-0">
-                        <div class="d-lg-flex align-items-center justify-content-center text-center">
-                            <i class="icon-barcode"></i>
-                            <span class="d-block"><b class="d-block d-lg-inline-block">7% no Boleto</b></span>
+                    <div class="col-lg-3">
+                        <div class="option">
+                            <div class="option-label">Frete grátis</div>
+                            <small>Veja regras*</small>
                         </div>
                     </div>
-                    <div class="col-6 col-lg-3">
-                        <div class="d-lg-flex align-items-center justify-content-center text-center">
-                            <i class="icon-pix"></i>
-                            <span class="d-block"><b class="d-block d-lg-inline-block">10% no PIX</b></span>
+                    <div class="col-lg-3">
+                        <div class="option">
+                            <div class="option-label">Pague com m-pesa</div>
                         </div>
                     </div>
-                    <div class="col-6 col-lg-3">
-                        <div class="d-lg-flex align-items-center justify-content-center text-center">
-                            <i class="icon-credit-card"></i>
-                            <span class="d-block"><b class="d-block d-lg-inline-block">Até 7x no cartão sem juros</b></span>
+                    <div class="col-lg-3">
+                        <div class="option">
+                            <div class="option-label">Pague com e-mola</div>
                         </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="option">
+                            <div class="option-label">Pague com cartão</div>
+                        </div>
+                    </div>
+                </div>
+                <p>Entregas disponíveis em Maputo e Gaza</p>
+            </div>
+        </section>
+
+        <!-- Nossos Produtores -->
+        <section class="producers">
+            <div class="container">
+                <h2>Nossos Produtores</h2>
+                <div class="producer-list">
+                    <div class="producer-item">
+                        <img src="Images/producer1.jpg" alt="Produtor 1">
+                        <div class="producer-name">Produtor 1</div>
+                    </div>
+                    <div class="producer-item">
+                        <img src="Images/producer2.jpg" alt="Produtor 2">
+                        <div class="producer-name">Produtor 2</div>
+                    </div>
+                    <div class="producer-item">
+                        <img src="Images/producer3.jpg" alt="Produtor 3">
+                        <div class="producer-name">Produtor 3</div>
+                    </div>
+                    <div class="producer-item">
+                        <img src="Images/producer4.jpg" alt="Produtor 4">
+                        <div class="producer-name">Produtor 4</div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Seção Contato -->
-        <section class="contact">
+        <!-- Escola do Agricultor e Pecuarista -->
+        <section class="farmer-school">
             <div class="container">
-                <h2>Contato</h2>
-                <p>Para mais informações sobre nossos produtos, entre em contato:</p>
-                <p><strong>Telefone:</strong> +258 84 123 4567</p>
-                <p><strong>Email:</strong> info@agromagude.co.mz</p>
-                <img src="Images/imagem_contato.jpg" alt="Contato Agropecuária Magude">
+                <h2>Escola do Agricultor e Pecuarista</h2>
+                <p>A Escola do Agricultor e Pecuarista contribui para que a agricultura de subsistência seja economicamente viável, capacitando o pequeno e médio produtor e atualizando o grande produtor para o desenvolvimento sustentável de Moçambique.</p>
+                <a href="registro.html">Registe-se aqui</a>
+                <div class="image-container">
+                    <img src="Images/blocoescola.jpg" alt="Escola do Agricultor" class="img-fluid">
+                </div>
             </div>
         </section>
     </main>
