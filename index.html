@@ -5,41 +5,107 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agropecuária Magude - Milho e Carne Bovina</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
 </head>
 <body>
-    <header>
-        <h1 id="titulo">Agropecuária Magude</h1>
-        <h2>Promovendo o Distrito de Magude no Mundo de Negócios Digitais</h2>
+    <!-- Cabeçalho com navegação principal -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <h1 class="logo"><a href="index.html">Agropecuária Magude</a></h1>
+                <nav class="main-nav">
+                    <a href="index.html">Página Inicial</a>
+                    <a href="sobre.html">Sobre Nós</a>
+                    <a href="produtos.html">Produtos</a>
+                    <a href="contato.html">Contato</a>
+                </nav>
+            </div>
+        </div>
     </header>
 
-    <nav>
-        <a href="index.html">Página Inicial</a>
-        <a href="sobre.html">Sobre Nós</a>
-        <a href="produtos.html">Produtos</a>
-        <a href="contato.html">Contato</a>
-    </nav>
-
-    <section class="content" id="home">
-        <h2>Bem-vindo à Agropecuária Magude</h2>
-        <p>Descubra o que há de melhor na Agropecuária no nosso distrito de Magude. Nós, as raparigas do Distrito de Magude, estamos comprometidas e engajadas com a excelência em ambos os setores para promover a economia e levar o distrito para a era digital.</p>
-        <div class="img-container">
-            <img id="img-home3" src="Images/ec0f3765-agricultura-an-1320x880.jpg" alt="Milho em Magude">
-            <img id="img-home1" src="Images/1=gado-em-Goba-12.jpg" alt="Gado em Magude">
-            <img id="img-home2" src="Images/IMG-20211026-WA0018.jpg" alt="Cultivo de Milho">
+    <!-- Seção principal de introdução -->
+    <section class="banner">
+        <div class="banner-content">
+            <h2>Promovendo o Distrito de Magude no Mundo de Negócios Digitais</h2>
+            <p>Descubra o que há de melhor na Agropecuária do nosso distrito, impulsionando a economia local e conectando produtores ao mercado global.</p>
         </div>
     </section>
 
-    <section class="content">
-        <h2>Contato</h2>
-        <p>Entre em contato conosco para mais informações sobre os nossos produtos:</p>
-        <p><strong>Telefone:</strong> +258 84 123 4567</p>
-        <p><strong>Email:</strong> info@agromagude.co.mz</p>
-        <img id="img-contato" src="Images/imagem_contato.jpg" alt="Contato Agropecuária Magude">
-    </section>
+    <main>
+        <!-- Seção Escola do Agricultor e Pecuarista -->
+        <section class="farmer-school">
+            <div class="container">
+                <h2>Escola do Agricultor e Pecuarista</h2>
+                <p>A Escola do Agricultor e Pecuarista contribui para que a agricultura de subsistência seja economicamente viável, tornando o pequeno e médio produtor mais capacitado e o grande produtor atualizado com vistas ao desenvolvimento sustentável de Moçambique.</p>
+                <p>Quer ser nosso parceiro e vender conosco? <a href="registro.html">Registe-se aqui</a>.</p>
+                <p><strong>Entregas disponíveis em Maputo e Gaza</strong></p>
+            </div>
+        </section>
 
+        <!-- Seção principal de boas-vindas -->
+        <section class="welcome">
+            <div class="container">
+                <h2>Bem-vindo à Agropecuária Magude</h2>
+                <p>Nós, as raparigas do Distrito de Magude, estamos comprometidas com a excelência e o progresso do setor agropecuário, levando o distrito para a era digital.</p>
+                <div class="img-container">
+                    <img src="Images/ec0f3765-agricultura-an-1320x880.jpg" alt="Milho em Magude">
+                    <img src="Images/1=gado-em-Goba-12.jpg" alt="Gado em Magude">
+                    <img src="Images/IMG-20211026-WA0018.jpg" alt="Cultivo de Milho">
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção com informações de frete e pagamento -->
+        <section class="shipping-payment-options">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6 col-lg-3 mb-4 mb-lg-0">
+                        <a href="#modalFreteGratis" data-target="#modalFreteGratis" data-toggle="modal" class="d-lg-flex align-items-center justify-content-center text-center">
+                            <i class="icon-shipping"></i>
+                            <span class="d-lg-flex align-items-center">
+                                <span><b class="d-block d-lg-inline-block">Frete grátis</b></span>
+                                <small class="d-block ml-2">Veja regras*</small>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="col-6 col-lg-3 mb-4 mb-lg-0">
+                        <div class="d-lg-flex align-items-center justify-content-center text-center">
+                            <i class="icon-barcode"></i>
+                            <span class="d-block"><b class="d-block d-lg-inline-block">7% no Boleto</b></span>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <div class="d-lg-flex align-items-center justify-content-center text-center">
+                            <i class="icon-pix"></i>
+                            <span class="d-block"><b class="d-block d-lg-inline-block">10% no PIX</b></span>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <div class="d-lg-flex align-items-center justify-content-center text-center">
+                            <i class="icon-credit-card"></i>
+                            <span class="d-block"><b class="d-block d-lg-inline-block">Até 7x no cartão sem juros</b></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Contato -->
+        <section class="contact">
+            <div class="container">
+                <h2>Contato</h2>
+                <p>Para mais informações sobre nossos produtos, entre em contato:</p>
+                <p><strong>Telefone:</strong> +258 84 123 4567</p>
+                <p><strong>Email:</strong> info@agromagude.co.mz</p>
+                <img src="Images/imagem_contato.jpg" alt="Contato Agropecuária Magude">
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
     <footer>
-        <p>&copy; 2024 Agropecuária Magude - Todos os Direitos Reservados</p>
+        <div class="container">
+            <p>&copy; 2024 Agropecuária Magude - Todos os Direitos Reservados</p>
+        </div>
     </footer>
 </body>
 </html>
