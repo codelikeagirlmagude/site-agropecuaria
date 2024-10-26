@@ -1,14 +1,65 @@
-/* Cabeçalho */
-.header {
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F0EAD6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
     background-color: #4E342E;
     color: white;
     text-align: center;
-    padding: 15px;
+    padding: 15px 0;
 }
 
-header h1, header h2 {
-    margin: 0;
-    color: #FFFFFF;
+nav {
+    text-align: center;
+    background-color: #795548;
+    padding: 10px 0;
+}
+
+nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+nav a:hover {
+    background-color: #D7C67E;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+/* Banner */
+.banner {
+    background-color: #D7C67E;
+    color: white;
+    padding: 40px;
+    text-align: center;
+}
+
+.banner-content h2 {
+    font-size: 24px;
+    color: #4E342E;
+}
+
+.banner-content p {
+    color: #FFF8E1;
+}
+
+/* Conteúdo Principal */
+.content {
+    margin: 10px;
+    padding: 15px;
+    background-color: #FFF8E1;
+    border-radius: 8px;
+}
+
+h1, h2, h3 {
+    text-align: center;
 }
 
 /* Carrossel de Imagens */
@@ -50,26 +101,39 @@ header h1, header h2 {
     border-radius: 4px;
 }
 
-/* Frete e Pagamento */
-.shipping-payment-options {
-    background-color: #FFF8E1;
-    padding: 20px;
-    text-align: center;
+/* Estilo para a exibição de imagens */
+.img-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
 }
 
-.option {
-    background: #4E342E;
-    color: white;
-    padding: 10px;
-    border-radius: 5px;
+.img-container img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Escola do Agricultor e Pecuarista */
+.farmer-school {
+    padding: 30px 0;
+    background-color: #FFE4B5;
+    text-align: center;
+    color: #4E342E;
+}
+
+.farmer-school h2 {
+    font-size: 24px;
+    color: #4E342E;
     margin-bottom: 15px;
 }
 
-/* Escola do Agricultor */
-.farmer-school {
-    padding: 30px;
-    background-color: #FFE4B5;
-    text-align: center;
+.farmer-school a {
+    color: #4E342E;
+    text-decoration: underline;
 }
 
 .farmer-school img {
@@ -79,10 +143,87 @@ header h1, header h2 {
     margin-top: 20px;
 }
 
-/* Responsivo */
+/* Seção de frete e pagamento */
+.shipping-payment-options {
+    background-color: #FFF8E1;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.shipping-payment-options .row {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.shipping-payment-options .option {
+    width: 300px; /* Largura igual à dos retângulos dos produtores */
+    background: rgba(78, 52, 46, 0.8); /* Cor do fundo dos retângulos */
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Ícones de pagamento */
+.shipping-payment-options i {
+    font-size: 24px;
+    color: #FFF8E1;
+    margin-bottom: 5px;
+}
+
+/* Contato */
+.contact {
+    padding: 30px 0;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 24px;
+    color: #4E342E;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #4E342E;
+    color: white;
+}
+
+/* Estilos específicos para dispositivos móveis */
 @media (max-width: 600px) {
-    .carousel-container, .product-list, .producer-list {
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .content {
+        margin: 5px;
+        padding: 10px;
+    }
+
+    .img-container img {
+        max-width: 100%;
+    }
+
+    .carousel-container, .product-list, .producer-list, .shipping-payment-options .row {
         flex-direction: column;
         align-items: center;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 18px;
     }
 }
