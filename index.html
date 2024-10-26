@@ -7,129 +7,120 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Cabeçalho com título e descrição -->
+    <!-- Cabeçalho com título e slogan -->
     <header class="header">
         <div class="container">
-            <div class="header-content">
-                <h1 class="logo">Agropecuária Magude</h1>
-                <h2>Promovendo o Distrito de Magude no Mundo de Negócios Digitais</h2>
-                <nav class="main-nav">
-                    <a href="index.html">Página Inicial</a>
-                    <a href="sobre.html">Sobre Nós</a>
-                    <a href="produtos.html">Produtos</a>
-                    <a href="contato.html">Contato</a>
-                </nav>
-            </div>
+            <h1 id="titulo">Agropecuária Magude</h1>
+            <h2>Promovendo o Distrito de Magude no Mundo de Negócios Digitais</h2>
         </div>
+        <nav>
+            <a href="index.html">Página Inicial</a>
+            <a href="sobre.html">Sobre Nós</a>
+            <a href="produtos.html">Produtos</a>
+            <a href="contato.html">Contato</a>
+        </nav>
     </header>
 
-    <!-- Seção principal de introdução -->
-    <main>
-        <!-- Bem-vindo -->
-        <section class="welcome">
-            <div class="container">
-                <h2>Bem-vindo à Agropecuária Magude</h2>
-            </div>
-        </section>
+    <!-- Seção Bem-vindo -->
+    <section class="content" id="home">
+        <h2>Bem-vindo à Agropecuária Magude</h2>
+    </section>
 
-        <!-- Carrossel de Imagens -->
-        <section class="carousel">
-            <div class="carousel-container">
-                <div class="carousel-slide">
-                    <img src="Images/carousel1.jpg" alt="Imagem 1" class="carousel-img">
-                    <img src="Images/carousel2.jpg" alt="Imagem 2" class="carousel-img">
+    <!-- Carrossel de Imagens -->
+    <section class="carousel">
+        <div class="carousel-container">
+            <img src="Images/carousel1.jpg" alt="Imagem 1" class="carousel-img">
+            <img src="Images/carousel2.jpg" alt="Imagem 2" class="carousel-img">
+        </div>
+    </section>
+
+    <!-- Seção Produtos -->
+    <section class="products">
+        <div class="container">
+            <h2>Produtos</h2>
+            <div class="product-list">
+                <div class="product-item">
+                    <img src="Images/ec0f3765-agricultura-an-1320x880.jpg" alt="Milho">
+                    <div class="product-label">Milho</div>
+                </div>
+                <div class="product-item">
+                    <img src="Images/1=gado-em-Goba-12.jpg" alt="Carne Bovina">
+                    <div class="product-label">Carne Bovina</div>
+                </div>
+                <div class="product-item">
+                    <img src="Images/IMG-20211026-WA0018.jpg" alt="Carne Caprina">
+                    <div class="product-label">Carne Caprina</div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Produtos -->
-        <section class="products">
-            <div class="container">
-                <h2>Produtos</h2>
-                <div class="product-list">
-                    <div class="product-item">
-                        <img src="Images/ec0f3765-agricultura-an-1320x880.jpg" alt="Milho">
-                        <div class="product-label">Milho</div>
-                    </div>
-                    <div class="product-item">
-                        <img src="Images/1=gado-em-Goba-12.jpg" alt="Carne Bovina">
-                        <div class="product-label">Carne Bovina</div>
-                    </div>
-                    <div class="product-item">
-                        <img src="Images/IMG-20211026-WA0018.jpg" alt="Carne Caprina">
-                        <div class="product-label">Carne Caprina</div>
+    <!-- Seção Frete e Pagamento -->
+    <section class="shipping-payment-options">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="option">
+                        <div class="option-label">Frete grátis</div>
+                        <small>Veja regras*</small>
                     </div>
                 </div>
-            </div>
-        </section>
-
-        <!-- Frete e Pagamento -->
-        <section class="shipping-payment-options">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-3">
-                        <div class="option">
-                            <div class="option-label">Frete grátis</div>
-                            <small>Veja regras*</small>
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="option">
-                            <div class="option-label">Pague com m-pesa</div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="option">
-                            <div class="option-label">Pague com e-mola</div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="option">
-                            <div class="option-label">Pague com cartão</div>
-                        </div>
+                <div class="col-lg-3">
+                    <div class="option">
+                        <div class="option-label">Pague com m-pesa</div>
                     </div>
                 </div>
-                <p>Entregas disponíveis em Maputo e Gaza</p>
-            </div>
-        </section>
-
-        <!-- Nossos Produtores -->
-        <section class="producers">
-            <div class="container">
-                <h2>Nossos Produtores</h2>
-                <div class="producer-list">
-                    <div class="producer-item">
-                        <img src="Images/producer1.jpg" alt="Produtor 1">
-                        <div class="producer-name">Produtor 1</div>
+                <div class="col-lg-3">
+                    <div class="option">
+                        <div class="option-label">Pague com e-mola</div>
                     </div>
-                    <div class="producer-item">
-                        <img src="Images/producer2.jpg" alt="Produtor 2">
-                        <div class="producer-name">Produtor 2</div>
-                    </div>
-                    <div class="producer-item">
-                        <img src="Images/producer3.jpg" alt="Produtor 3">
-                        <div class="producer-name">Produtor 3</div>
-                    </div>
-                    <div class="producer-item">
-                        <img src="Images/producer4.jpg" alt="Produtor 4">
-                        <div class="producer-name">Produtor 4</div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="option">
+                        <div class="option-label">Pague com cartão</div>
                     </div>
                 </div>
             </div>
-        </section>
+            <p>Entregas disponíveis em Maputo e Gaza</p>
+        </div>
+    </section>
 
-        <!-- Escola do Agricultor e Pecuarista -->
-        <section class="farmer-school">
-            <div class="container">
-                <h2>Escola do Agricultor e Pecuarista</h2>
-                <p>A Escola do Agricultor e Pecuarista contribui para que a agricultura de subsistência seja economicamente viável, capacitando o pequeno e médio produtor e atualizando o grande produtor para o desenvolvimento sustentável de Moçambique.</p>
-                <a href="registro.html">Registe-se aqui</a>
-                <div class="image-container">
-                    <img src="Images/blocoescola.jpg" alt="Escola do Agricultor" class="img-fluid">
+    <!-- Seção Nossos Produtores -->
+    <section class="producers">
+        <div class="container">
+            <h2>Nossos Produtores</h2>
+            <div class="producer-list">
+                <div class="producer-item">
+                    <img src="Images/producer1.jpg" alt="Produtor 1">
+                    <div class="producer-name">Produtor 1</div>
+                </div>
+                <div class="producer-item">
+                    <img src="Images/producer2.jpg" alt="Produtor 2">
+                    <div class="producer-name">Produtor 2</div>
+                </div>
+                <div class="producer-item">
+                    <img src="Images/producer3.jpg" alt="Produtor 3">
+                    <div class="producer-name">Produtor 3</div>
+                </div>
+                <div class="producer-item">
+                    <img src="Images/producer4.jpg" alt="Produtor 4">
+                    <div class="producer-name">Produtor 4</div>
                 </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
+
+    <!-- Seção Escola do Agricultor e Pecuarista -->
+    <section class="farmer-school">
+        <div class="container">
+            <h2>Escola do Agricultor e Pecuarista</h2>
+            <p>A Escola do Agricultor e Pecuarista contribui para que a agricultura de subsistência seja economicamente viável, capacitando o pequeno e médio produtor e atualizando o grande produtor para o desenvolvimento sustentável de Moçambique.</p>
+            <a href="registro.html">Registe-se aqui</a>
+            <div class="image-container">
+                <img src="Images/blocoescola.jpg" alt="Escola do Agricultor" class="img-fluid">
+            </div>
+        </div>
+    </section>
 
     <!-- Rodapé -->
     <footer>
