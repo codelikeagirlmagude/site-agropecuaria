@@ -33,6 +33,24 @@ nav a:hover {
     border-radius: 5px;
 }
 
+/* Banner */
+.banner {
+    background-color: #D7C67E;
+    color: white;
+    padding: 40px;
+    text-align: center;
+}
+
+.banner-content h2 {
+    font-size: 24px;
+    color: #4E342E;
+}
+
+.banner-content p {
+    color: #FFF8E1;
+}
+
+/* Conteúdo Principal */
 .content {
     margin: 10px;
     padding: 15px;
@@ -60,6 +78,63 @@ h1, h2, h3 {
     border-radius: 8px;
 }
 
+/* Escola do Agricultor e Pecuarista */
+.farmer-school {
+    padding: 30px 0;
+    background-color: #FFE4B5;
+    text-align: center;
+    color: #4E342E;
+}
+
+.farmer-school h2 {
+    font-size: 24px;
+    color: #4E342E;
+    margin-bottom: 15px;
+}
+
+.farmer-school a {
+    color: #4E342E;
+    text-decoration: underline;
+}
+
+/* Seção de frete e pagamento */
+.shipping-payment-options {
+    background-color: #FFF8E1;
+    padding: 20px 0;
+}
+
+.shipping-payment-options .row {
+    display: flex;
+    gap: 15px;
+    text-align: center;
+}
+
+.shipping-payment-options .col-lg-3 {
+    flex: 1;
+}
+
+.shipping-payment-options i {
+    font-size: 24px;
+    color: #4E342E;
+    margin-right: 10px;
+}
+
+.shipping-payment-options span, .shipping-payment-options b {
+    color: #4E342E;
+}
+
+/* Contato */
+.contact {
+    padding: 30px 0;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 24px;
+    color: #4E342E;
+}
+
+/* Rodapé */
 footer {
     text-align: center;
     padding: 10px;
@@ -81,6 +156,10 @@ footer {
 
     .img-container img {
         max-width: 100%;
+    }
+
+    .shipping-payment-options .row {
+        flex-direction: column;
     }
 
     h1 {
