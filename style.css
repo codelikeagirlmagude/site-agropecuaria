@@ -61,7 +61,14 @@ nav a:hover {
 h1, h2, h3 {
     text-align: center;
 }
-
+/* Separações entre Seções */
+.section {
+    background-color: #f5f5dc; /* Cor de fundo suave */
+    padding: 20px;
+    margin: 20px 0; /* Espaçamento entre seções */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para destacar a seção */
+}
 /* Carrossel de Imagens */
 .carousel-container {
     display: flex;
