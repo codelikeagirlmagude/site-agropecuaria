@@ -6,7 +6,6 @@ body {
     padding: 0;
 }
 
-/* Cabeçalho */
 header {
     background-color: #4E342E;
     color: white;
@@ -34,32 +33,32 @@ nav a:hover {
     border-radius: 5px;
 }
 
-/* Seções individuais com cores específicas */
-#home {
-    background-color: #FFF8E1; /* Cor da seção de Boas-vindas */
-    padding: 20px;
-}
-
-.carousel {
-    background-color: #D7C67E; /* Cor da seção de Carrossel */
-    padding: 40px 0;
+/* Banner */
+.banner {
+    background-color: #D7C67E;
+    color: white;
+    padding: 40px;
     text-align: center;
 }
 
-.products {
-    background-color: #FFF8E1; /* Cor da seção de Produtos */
-    padding: 30px 0;
+.banner-content h2 {
+    font-size: 24px;
+    color: #4E342E;
 }
 
-.shipping-payment-options {
-    background-color: #8BC34A; /* Cor da seção de Frete e Pagamento */
-    padding: 20px 0;
-    text-align: center;
+.banner-content p {
+    color: #FFF8E1;
 }
 
-.contact {
-    background-color: #4CAF50; /* Cor da seção de Contato */
-    padding: 30px 0;
+/* Conteúdo Principal */
+.content {
+    margin: 10px;
+    padding: 15px;
+    background-color: #FFF8E1;
+    border-radius: 8px;
+}
+
+h1, h2, h3 {
     text-align: center;
 }
 
@@ -78,8 +77,8 @@ nav a:hover {
     height: 304px;
 }
 
-/* Produtos */
-.product-list {
+/* Produtos e Produtores */
+.product-list, .producer-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -87,18 +86,18 @@ nav a:hover {
     margin-top: 15px;
 }
 
-.product-item {
+.product-item, .producer-item {
     position: relative;
     width: 300px;
     flex-shrink: 0;
 }
 
-.product-item img {
+.product-item img, .producer-item img {
     width: 100%;
     border-radius: 8px;
 }
 
-.product-label {
+.product-label, .producer-name {
     position: absolute;
     bottom: 10px;
     left: 50%;
@@ -109,7 +108,77 @@ nav a:hover {
     border-radius: 4px;
 }
 
-/* Frete e Pagamento */
+/* Escola do Agricultor e Pecuarista */
+.escola-agricultor {
+    display: flex;
+    align-items: center;
+    background-color: #a18a81
+    padding: 20px;
+    border-radius: 8px;
+    position: relative;
+    margin: 40px 0; /* Espaçamento para separar das outras seções */
+}
+
+.texto {
+    width: 60%;
+    padding: 20px;
+    color: #6b8e23; /* Verde escuro para o texto */
+}
+
+.texto h2 {
+    font-size: 24px;
+    color: #4caf50; /* Cor verde para o título */
+    font-weight: bold;
+}
+
+.texto p {
+    font-size: 16px;
+    color: #333;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+.texto button {
+    background-color: #8bc34a; /* Cor verde do botão */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 15px;
+    text-transform: uppercase;
+}
+
+.texto button:hover {
+    background-color: #7cb342; /* Cor ao passar o mouse */
+}
+
+.imagem {
+    width: 40%;
+    text-align: right;
+}
+
+.imagem img {
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+
+/* Seção de frete e pagamento */
+.shipping-payment-options {
+    background-color: #FFF8E1;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.shipping-payment-options .row {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
 .shipping-payment-options .option {
     width: 300px;
     background: rgba(78, 52, 46, 0.8);
@@ -121,13 +190,31 @@ nav a:hover {
     align-items: center;
 }
 
-/* Rodapé */
+/* Ícones de pagamento */
+.shipping-payment-options i {
+    font-size: 24px;
+    color: #FFF8E1;
+    margin-bottom: 5px;
+}
+
+/* Contato */
+.contact {
+    padding: 30px 0;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 24px;
+    color: #4E342E;
+}
+
+/* Rodapé Detalhado */
 footer {
-    background-color: #333;
-    color: white;
-    padding: 20px;
     display: flex;
     justify-content: space-between;
+    padding: 20px;
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
 }
 
 .footer-section {
@@ -136,8 +223,14 @@ footer {
 
 .footer-section h3 {
     font-size: 16px;
-    color: #FFF8E1;
+    color: #333;
     margin-bottom: 15px;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
 .footer-section ul li {
@@ -146,6 +239,27 @@ footer {
     margin-bottom: 10px;
 }
 
+.footer-section ul li a {
+    color: #666;
+    text-decoration: none;
+}
+
+.footer-section ul li i {
+    margin-right: 8px;
+    color: #666;
+}
+
 .footer-section ul li a:hover {
-    color: #FFF8E1;
+    color: #000;
+}
+
+.social-media li {
+    display: flex;
+    align-items: center;
+}
+
+.social-media li i {
+    font-size: 18px;
+    margin-right: 8px;
+    color: #333;
 }
