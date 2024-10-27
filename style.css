@@ -109,30 +109,60 @@ h1, h2, h3 {
 }
 
 /* Escola do Agricultor e Pecuarista */
-.farmer-school {
-    padding: 30px 0;
-    background-color: #FFE4B5;
-    text-align: center;
-    color: #4E342E;
+.escola-agricultor {
+    display: flex;
+    align-items: center;
+    background-color: #f1f8e9; /* Cor de fundo semelhante ao verde claro */
+    padding: 20px;
+    border-radius: 8px;
+    position: relative;
 }
 
-.farmer-school h2 {
+.texto {
+    width: 60%;
+    padding: 20px;
+    color: #6b8e23; /* Verde escuro para o texto */
+}
+
+.texto h2 {
     font-size: 24px;
-    color: #4E342E;
-    margin-bottom: 15px;
+    color: #4caf50; /* Cor verde para o título */
+    font-weight: bold;
 }
 
-.farmer-school a {
-    color: #4E342E;
-    text-decoration: underline;
+.texto p {
+    font-size: 16px;
+    color: #333;
+    margin-top: 10px;
+    line-height: 1.5;
 }
 
-.farmer-school img {
-    width: 100%;
-    max-width: 900px;
-    height: auto;
-    margin-top: 20px;
+.texto button {
+    background-color: #8bc34a; /* Cor verde do botão */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 15px;
+    text-transform: uppercase;
 }
+
+.texto button:hover {
+    background-color: #7cb342; /* Cor ao passar o mouse */
+}
+
+.imagem {
+    width: 40%;
+    text-align: right;
+}
+
+.imagem img {
+    max-width: 100%;
+    border-radius: 50%;
+}
+
 
 /* Seção de frete e pagamento */
 .shipping-payment-options {
