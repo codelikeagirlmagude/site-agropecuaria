@@ -61,14 +61,7 @@ nav a:hover {
 h1, h2, h3 {
     text-align: center;
 }
-/* Separações entre Seções */
-.section {
-    background-color: #f5f5dc; /* Cor de fundo suave */
-    padding: 20px;
-    margin: 20px 0; /* Espaçamento entre seções */
-    border-radius: 10px; /* Bordas arredondadas */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para destacar a seção */
-}
+
 /* Carrossel de Imagens */
 .carousel-container {
     margin: 10px;
@@ -91,6 +84,10 @@ h1, h2, h3 {
 
 /* Produtos e Produtores */
 .product-list, .producer-list {
+    margin: 10px;
+    padding: 15px;
+    background-color: #FFF8E1;
+    border-radius: 8px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
