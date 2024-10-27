@@ -116,6 +116,7 @@ h1, h2, h3 {
     padding: 20px;
     border-radius: 8px;
     position: relative;
+    margin: 40px 0; /* Espaçamento para separar das outras seções */
 }
 
 .texto {
