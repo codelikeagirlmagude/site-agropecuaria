@@ -120,11 +120,12 @@ h1, h2, h3 {
 
 /* Escola do Agricultor e Pecuarista */
 .escola-agricultor {
+    margin: 10px;
+    padding: 15px;
+    background-color: #FFF8E1;
+    border-radius: 8px;
     display: flex;
     align-items: center;
-    background-color: #d4c8c5
-    padding: 20px;
-    border-radius: 8px;
     position: relative;
         margin-bottom: 20px;
     margin: 40px 0; /* Espaçamento para separar das outras seções */
