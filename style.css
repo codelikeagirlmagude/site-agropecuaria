@@ -35,7 +35,7 @@ nav a:hover {
 
 /* Banner */
 .banner {
-    background-color: #D7C67E;
+    background-color: #d4c8c5;
     color: white;
     padding: 40px;
     text-align: center;
@@ -114,10 +114,11 @@ h1, h2, h3 {
 .escola-agricultor {
     display: flex;
     align-items: center;
-    background-color: #a18a81
+    background-color: #d4c8c5
     padding: 20px;
     border-radius: 8px;
     position: relative;
+        margin-bottom: 20px;
     margin: 40px 0; /* Espaçamento para separar das outras seções */
 }
 
