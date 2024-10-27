@@ -68,10 +68,6 @@ h1, h2, h3 {
     padding: 15px;
     background-color: #FFF8E1;
     border-radius: 8px;
-    justify-content: center;
-    overflow: hidden;
-    margin-bottom: 20px;
-    margin: 20px auto;
 }
 
 .carousel-img {
