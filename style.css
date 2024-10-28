@@ -352,16 +352,18 @@ footer {
     font-size: 14px;
     color: #666;
     margin-bottom: 10px;
-}
-
-.footer-section ul li a {
-    color: #666;
-    text-decoration: none;
+    display: flex;
+    align-items: center; /* Alinha os ícones verticalmente com o texto */
 }
 
 .footer-section ul li i {
     margin-right: 8px;
     color: #666;
+}
+
+.footer-section ul li a {
+    color: #666;
+    text-decoration: none;
 }
 
 .footer-section ul li a:hover {
