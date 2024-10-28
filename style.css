@@ -141,7 +141,7 @@ h1, h2, h3 {
 /* Botão de ação */
 .carousel-btn {
     display: inline-block;
-    padding: 10px 20px; /* Ajuste para um botão compacto */
+    padding: 5px 10px; /* Ajuste para um botão compacto */
     font-size: 16px;
     color: #ffffff;
     background-color: #8b0000; /* Sua cor personalizada */
