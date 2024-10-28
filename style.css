@@ -76,13 +76,13 @@ h1, h2, h3 {
 }
 
 .carousel-img {
-    width: 100%;
+    width: 700px;
     flex-shrink: 0;
     position: relative;
 }
 
 .carousel-img img {
-    width: 100%;
+    width: 700px;
     height: 304px;
 }
 
