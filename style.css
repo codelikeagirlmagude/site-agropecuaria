@@ -67,60 +67,62 @@ h1, h2, h3 {
     position: relative;
     max-width: 900px;
     margin: 20px auto;
-    overflow: hidden; /* Limita o conteúdo visível ao tamanho do contêiner */
+    overflow: hidden;
 }
 
+/* Configuração do contêiner das imagens e texto */
 .carousel-img-container {
     display: flex;
     width: 200%; /* O dobro do tamanho para permitir o deslocamento lateral */
     transition: transform 0.5s ease;
 }
 
-.carousel-img {
-    width: 50%; /* Ajusta para que cada imagem ocupe metade do espaço */
+.carousel-slide {
+    display: flex;
+    width: 50%; /* Cada slide ocupa metade do espaço */
     flex-shrink: 0;
-    position: relative;
 }
 
-.carousel-img img {
+/* Configuração da imagem para ocupar a metade esquerda do slide */
+.carousel-image {
+    width: 50%;
+}
+
+.carousel-image img {
     width: 100%;
-    height: 304px;
-    object-fit: cover; /* Ajusta a imagem para cobrir todo o espaço sem distorção */
+    height: 100%;
+    object-fit: cover; /* Mantém a imagem ajustada sem distorções */
 }
 
-/* Design atualizado para o texto do carrossel */
+/* Configuração do texto para ocupar a metade direita do slide */
 .carousel-text {
-    position: absolute;
-    top: 50%;
-    left: 10%;
-    transform: translateY(-50%);
-    color: #633d3d; /* Tom de marrom para o texto */
-    background-color: rgba(255, 230, 230, 0.9); /* Fundo em tom de carne claro com transparência */
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: #f0f0f0; /* Fundo claro para destacar o texto */
+    color: #333;
 }
 
 .carousel-text h2 {
-    color: #a52a2a; /* Título em tom de carne mais escuro */
-    font-weight: bold;
     font-size: 24px;
+    color: #8b0000; /* Título em tom de vermelho escuro */
     margin-bottom: 10px;
 }
 
 .carousel-text p {
     font-size: 16px;
     margin-bottom: 15px;
+    color: #555;
 }
 
-/* Estilo atualizado do botão */
+/* Botão de ação */
 .carousel-btn {
-    display: inline-block;
-    margin-top: 10px;
     padding: 10px 20px;
     font-size: 16px;
     color: #ffffff;
-    background-color: #d2691e; /* Cor de carne para o botão */
+    background-color: #8b0000;
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -129,7 +131,7 @@ h1, h2, h3 {
 }
 
 .carousel-btn:hover {
-    background-color: #a52a2a; /* Cor mais escura ao passar o mouse */
+    background-color: #a52a2a;
 }
 
 /* Esconde os radio buttons */
