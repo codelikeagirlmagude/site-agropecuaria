@@ -140,14 +140,16 @@ h1, h2, h3 {
 
 /* Botão de ação */
 .carousel-btn {
-    padding: 10px 10px;
+    display: inline-block;
+    padding: 10px 20px; /* Ajuste para um botão compacto */
     font-size: 16px;
     color: #ffffff;
-    background-color: #8b0000;
+    background-color: #8b0000; /* Sua cor personalizada */
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    text-decoration: none;
+    margin-top: 20px;
+    text-align: center;
     transition: background-color 0.3s ease;
 }
 
