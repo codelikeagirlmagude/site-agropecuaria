@@ -138,9 +138,10 @@ h1, h2, h3 {
     margin-bottom: 15px;
 }
 
-/* Botão de ação */
+/* Botão de ação com ajuste de largura automática */
 .carousel-btn {
-    padding: 10px 20px;
+    display: inline-block; /* Permite que o botão ajuste a largura ao conteúdo */
+    padding: 8px 16px; /* Margem interna mais compacta */
     font-size: 16px;
     color: #ffffff;
     background-color: #8b0000;
@@ -153,6 +154,7 @@ h1, h2, h3 {
 .carousel-btn:hover {
     background-color: #a52a2a;
 }
+
 
 /* Esconde os radio buttons */
 input[type="radio"] {
