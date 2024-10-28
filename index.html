@@ -28,14 +28,36 @@
     </section>
 
    <!-- Carrossel de Imagens -->
-<section class="carousel-container">
-    <img src="Images/Gado-Magude.jpg" alt="Carne Bovina" class="carousel-img">
-    <img src="Images/repo.jpg" alt="Imagem 2" class="carousel-img">
-    <div class="carousel-text">
-        <h2>Se você acha que comeu boa carne, é porque não conhece a de Magude.</h2>
-        <button class="carousel-btn">Quem somos</button>
+<div class="carousel-container">
+    <!-- Radio Buttons para alternar as imagens -->
+    <input type="radio" name="carousel" id="carousel1" checked>
+    <input type="radio" name="carousel" id="carousel2">
+
+    <!-- Imagens do Carrossel -->
+    <div class="carousel-img-container">
+        <div class="carousel-img" id="img1">
+            <img src="Images/Gado-Magude.jpg" alt="Carne Bovina">
+            <div class="carousel-text">
+                <h2>Se você acha que comeu boa carne, é porque não conhece a de Magude.</h2>
+                <button class="carousel-btn">Quem somos</button>
+            </div>
+        </div>
+        <div class="carousel-img" id="img2">
+            <img src="Images/repo.jpg" alt="Imagem 2">
+            <div class="carousel-text">
+                <h2>Imagem 2 - Descrição</h2>
+                <button class="carousel-btn">Saiba mais</button>
+            </div>
+        </div>
     </div>
-</section>
+
+    <!-- Labels para os Radio Buttons (controles) -->
+    <div class="carousel-controls">
+        <label for="carousel1" class="control-btn"></label>
+        <label for="carousel2" class="control-btn"></label>
+    </div>
+</div>
+
 
     <!-- Seção Produtos -->
     <section class="products">
