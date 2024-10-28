@@ -64,10 +64,13 @@ h1, h2, h3 {
 
 /* Carrossel de Imagens */
 .carousel-container {
-    margin: 10px;
-    padding: 15px;
-    background-color: #FFF8E1;
-    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    max-width: 900px;
+    margin: 20px auto;
 }
 
 .carousel-img {
@@ -75,6 +78,41 @@ h1, h2, h3 {
     max-width: 900px;
     height: 304px;
 }
+
+.carousel-text {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo semitransparente para destacar o texto */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.carousel-text h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.carousel-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #8b0000; /* Cor de botão relacionada à venda de carne */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.carousel-btn:hover {
+    background-color: #a52a2a; /* Tom mais claro ao passar o mouse */
+}
+
 
 /* Produtos e Produtores */
 .product-list, .producer-list {
