@@ -279,6 +279,18 @@ input[type="radio"] {
     position: relative;
 }
 
+/* Estilo para telas menores */
+@media (max-width: 768px) {
+    .shipping-payment-options .row {
+        flex-direction: column; /* Muda para coluna em dispositivos móveis */
+        align-items: stretch; /* Faz as opções ocuparem toda a largura */
+    }
+
+    .shipping-payment-options .option {
+        width: 100%; /* Faz cada opção ocupar toda a largura disponível */
+    }
+}
+
 .shipping-payment-options .option {
     width: 300px;
     background: rgba(78, 52, 46, 0.8);
@@ -296,6 +308,7 @@ input[type="radio"] {
     color: #FFF8E1;
     margin-bottom: 5px;
 }
+
 
 /* Contato */
 .contact {
