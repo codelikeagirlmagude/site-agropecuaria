@@ -414,3 +414,14 @@ footer {
         width: 48%; /* Aumenta a largura para 48% para duas colunas */
     }
 }
+/* Produtores */
+.img-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.img-container img {
+    border-radius: 8px;
+}
