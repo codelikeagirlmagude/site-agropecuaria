@@ -418,10 +418,12 @@ footer {
 .img-container {
     display: flex;
     flex-wrap: wrap;
+      max-width: 300px;
     justify-content: center;
     gap: 15px;
 }
 
 .img-container img {
+      max-width: 300px;
     border-radius: 8px;
 }
