@@ -173,6 +173,44 @@ input[type="radio"] {
     background-color: #a52a2a;
 }
 
+/* Ajustes para telas móveis */
+@media (max-width: 768px) {
+    .carousel-container {
+        max-width: 100%;
+        margin: 10px;
+    }
+
+    .carousel-img-container {
+        width: 200%;
+    }
+
+    .carousel-slide {
+        width: 100%;
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .carousel-text {
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .carousel-text h2 {
+        font-size: 20px;
+    }
+
+    .carousel-text p {
+        font-size: 14px;
+    }
+
+    .steak-shape, .leaf-shape {
+        width: 100%;
+        clip-path: none; /* Remove o formato para telas pequenas */
+    }
+}
+
+
 
 
 /* Produtos e Produtores */
